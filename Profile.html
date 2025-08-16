@@ -119,7 +119,7 @@
     </section>
 
     <section class="section">
-        <div class="section-title">경력 <span style="font-weight:400; color:#888; font-size: .8em;"> 5년 4개월</span></div>
+        <div class="section-title">경력 <span style="font-weight:400; color:#888; font-size: .8em;"> 5년 3개월</span></div>
         <ul class="career-list">
             <li>
                 <div class="company">그랙션 & 이한 크리에이티브 클라이언트 개발자</div>
@@ -173,14 +173,6 @@
         </ul>
     </section>
     <script>
-        function loadIndex(e) {
-            e.preventDefault();
-            fetch('index.html')
-                .then(response => response.text())
-                .then(html => {
-                    document.getElementById('content-area').innerHTML = html;
-                });
-        }
         function loadProfile(e) {
             e.preventDefault();
             fetch('Profile.html')
