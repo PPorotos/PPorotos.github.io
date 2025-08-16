@@ -163,7 +163,11 @@
 <body>
     <div class="container">
         <aside class="sidebar">
-            <h1>김정훈</h1>
+            <h1>
+                <nav>
+                    <a href="#" onclick="loadIndex(event)">김정훈</a>
+                </nav>
+            </h1>
             <div class="birth">kjh96682@naver.com</div>
             <nav>
                 <a href="#" onclick="loadProfile(event)">이력서</a>
@@ -183,6 +187,14 @@
             </div>
         </main>
         <script>
+            function loadIndex(e) {
+                e.preventDefault();
+                fetch('index.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById('content-area').innerHTML = html;
+                    });
+            }
             function loadProfile(e) {
                 e.preventDefault();
                 fetch('Profile.html')

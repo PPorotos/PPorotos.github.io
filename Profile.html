@@ -127,44 +127,44 @@
                 <div class="role2">* 그랙션과 이한크리에이티브는 같은 경영진의 다른 법인입니다. 한 회사에서 5년동안 근무하였습니다.*</div>
 
                 <ul>
-                    <li><b>치매 예방 및 관리 프로그램</b>
+                    <li><b><a href="#" onclick="loadKisti(event)">치매 예방 및 관리 프로그램</a></b>
                         <ul>
-                            <li>개발 기술 : Unity, Agora, Photon</li>
+                            <li>Unity, Agora, Photon</li>
                         </ul>
                     </li>
-                    <li><b>환경 교육 메타버스</b>
+                    <li><b><a href="#" onclick="loadIlly(event)">환경 교육 메타버스</a></b>
                         <ul>
-                            <li>개발 기술 : Unity</li>
-                            <li>성과 : Android, iOS 출시</li>
+                            <li>Unity</li>
+                            <li>Android, iOS 출시</li>
                         </ul>
                     </li>
-                    <li><b>공정 시뮬레이션</b>
+                    <li><b><a href="#" onclick="loadHolo(event)">공정 시뮬레이션</a></b>
                         <ul>
-                            <li>개발 기술 : Unity, Hololens2</li>
+                            <li>Unity, Hololens2</li>
                         </ul>
                     </li>
-                    <li><b>VR 체육 게임</b>
+                    <li><b><a href="#" onclick="loadGym(event)">VR 체육 게임</a></b>
                         <ul>
-                            <li>개발 기술 : Unreal Blueprint, Vive Pro</li>
-                            <li>성과 : 행복복지센터 납품</li>
+                            <li>Unreal Blueprint, Vive Pro</li>
+                            <li>행복복지센터 납품</li>
                         </ul>
                     </li>
                     <!-- <li><b>EBS 수학교육 AR</b>
                         <ul>
-                            <li>개발 기술 : Unity, ARFoundation</li>
-                            <li>성과 : Android, iOS 출시</li>
+                            <li>Unity, ARFoundation</li>
+                            <li>Android, iOS 출시</li>
                         </ul>
                     </li> -->
-                    <li><b>VR 치과 시뮬레이션</b>
+                    <li><b><a href="#" onclick="loadDenti(event)">VR 치과 시뮬레이션</a></b>
                         <ul>
-                            <li>개발 기술 : Unreal Blueprint, Vive Pro</li>
-                            <li>성과 : Steam 출시</li>
+                            <li>Unreal Blueprint, Vive Pro</li>
+                            <li>Steam 출시</li>
                         </ul>
                     </li>
-                    <li><b>OTT 어린이 교육 게임</b>
+                    <li><b><a href="#" onclick="loadOTT(event)">OTT 어린이 교육 게임</a></b>
                         <ul>
-                            <li>개발 기술 : Unity, C#</li>
-                            <li>성과 : 딜라이브 서비스 출시</li>
+                            <li>Unity, C#</li>
+                            <li>딜라이브 서비스 출시</li>
                             <div style="height:100px;"></div>
                         </ul>
                     </li>
@@ -172,7 +172,88 @@
             </li>
         </ul>
     </section>
-
+    <script>
+        function loadIndex(e) {
+            e.preventDefault();
+            fetch('index.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('content-area').innerHTML = html;
+                });
+        }
+        function loadProfile(e) {
+            e.preventDefault();
+            fetch('Profile.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('content-area').innerHTML = html;
+                });
+        }
+        function loadSkill(e) {
+            e.preventDefault();
+            fetch('Skill.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('content-area').innerHTML = html;
+                });
+        }
+        function loadKisti(e) {
+            e.preventDefault();
+            fetch('Kisti.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('content-area').innerHTML = html;
+                });
+        }
+        function loadIlly(e) {
+            e.preventDefault();
+            fetch('IllyNSam.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('content-area').innerHTML = html;
+                });
+        }
+        function loadHolo(e) {
+            e.preventDefault();
+            fetch('holo.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('content-area').innerHTML = html;
+                });
+        }
+        function loadGym(e) {
+            e.preventDefault();
+            fetch('GymVR.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('content-area').innerHTML = html;
+                });
+        }
+        function loadMath(e) {
+            e.preventDefault();
+            fetch('Math.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('content-area').innerHTML = html;
+                });
+        }
+        function loadDenti(e) {
+            e.preventDefault();
+            fetch('DentistryVR.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('content-area').innerHTML = html;
+                });
+        }
+        function loadOTT(e) {
+            e.preventDefault();
+            fetch('GameOTT.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('content-area').innerHTML = html;
+                });
+        }
+    </script>
 </body>
 
 </html>
