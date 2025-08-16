@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>김정훈 프로필</title>
+    <style>
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            background: #e0e0e0;
+            border-radius: 50%;
+            background-image: url('https://cdn-icons-png.flaticon.com/512/149/149071.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .profile-info h2 {
+            margin: 0;
+            font-size: 2em;
+            font-weight: 600;
+        }
+
+        .profile-info .job {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        .profile-info .age {
+            font-size: 1em;
+            color: #888;
+        }
+
+        .contact {
+            margin: 18px 0 32px 0;
+            font-size: 1em;
+            color: #444;
+        }
+
+        .section {
+            margin-bottom: 32px;
+            background: #fff;
+        }
+
+        .section-title {
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-bottom: 12px;
+            border-bottom: 2px solid #222;
+            padding-bottom: 4px;
+        }
+
+        .edu-list,
+        .career-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .edu-list li,
+        .career-list li {
+            margin-bottom: 12px;
+        }
+
+        .career-list .company {
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .career-list .role {
+            font-size: 1em;
+            color: #555;
+            margin-bottom: 4px;
+        }
+
+        .career-list .role2 {
+            font-size: 1em;
+            color: #b3b3b3;
+            margin-bottom: 3px;
+        }
+
+        .career-list ul {
+            margin: 0 0 0 16px;
+            padding: 0;
+            font-size: 0.98em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="profile">
+        <div class="profile-img"></div>
+        <div class="profile-info">
+            <h2>김정훈</h2>
+            <div class="job">Unity 클라이언트 개발</div>
+            <div class="age">1993.06.10 (만 32세)</div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <p>이메일 : <a href="mailto:kjh96682@naver.com">kjh96682@naver.com</a></p>
+    </div>
+
+    <section class="section">
+        <div class="section-title">학력</div>
+        <ul class="edu-list">
+            <li>2009 – 2011 &nbsp; 제주 세화 고등학교</li>
+            <li>2012 – 2019 &nbsp; 제주대학교 컴퓨터공학전공</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <div class="section-title">경력 <span style="font-weight:400; color:#888; font-size: .8em;"> 5년 4개월</span></div>
+        <ul class="career-list">
+            <li>
+                <div class="company">그랙션 & 이한 크리에이티브 클라이언트 개발자</div>
+                <div class="role">2019.05 – 2024.07 &nbsp; 메타버스팀 팀장/과장</div>
+                <div class="role2">* 그랙션과 이한크리에이티브는 같은 경영진의 다른 법인입니다. 한 회사에서 5년동안 근무하였습니다.*</div>
+
+                <ul>
+                    <li><b>치매 예방 및 관리 프로그램</b>
+                        <ul>
+                            <li>개발 기술 : Unity, Agora, Photon</li>
+                        </ul>
+                    </li>
+                    <li><b>환경 교육 메타버스</b>
+                        <ul>
+                            <li>개발 기술 : Unity</li>
+                            <li>성과 : Android, iOS 출시</li>
+                        </ul>
+                    </li>
+                    <li><b>공정 시뮬레이션</b>
+                        <ul>
+                            <li>개발 기술 : Unity, Hololens2</li>
+                        </ul>
+                    </li>
+                    <li><b>VR 체육 게임</b>
+                        <ul>
+                            <li>개발 기술 : Unreal Blueprint, Vive Pro</li>
+                            <li>성과 : 행복복지센터 납품</li>
+                        </ul>
+                    </li>
+                    <!-- <li><b>EBS 수학교육 AR</b>
+                        <ul>
+                            <li>개발 기술 : Unity, ARFoundation</li>
+                            <li>성과 : Android, iOS 출시</li>
+                        </ul>
+                    </li> -->
+                    <li><b>VR 치과 시뮬레이션</b>
+                        <ul>
+                            <li>개발 기술 : Unreal Blueprint, Vive Pro</li>
+                            <li>성과 : Steam 출시</li>
+                        </ul>
+                    </li>
+                    <li><b>OTT 어린이 교육 게임</b>
+                        <ul>
+                            <li>개발 기술 : Unity, C#</li>
+                            <li>성과 : 딜라이브 서비스 출시</li>
+                            <div style="height:100px;"></div>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+</body>
+
+</html>

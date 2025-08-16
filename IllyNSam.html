@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>환경 교육 메타버스</title>
+  <style>
+    :root {
+      --text: #111;
+      --sub: #6a6a6a;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: var(--text);
+      font-family: Segoe UI, Apple SD Gothic Neo, Malgun Gothic, system-ui, -apple-system, Arial, sans-serif;
+    }
+
+    .page {
+      max-width: 1000px;
+      margin: 56px auto 120px;
+    }
+
+    .wrap {
+      padding: 0 32px;
+    }
+
+    h1 {
+      font-size: 44px;
+      line-height: 1.15;
+      margin: 0 0 20px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .links {
+      margin: 0 0 36px;
+      font-size: 18px;
+      color: #1a73e8;
+    }
+
+    .links a {
+      color: #1a73e8;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      margin-right: 12px;
+    }
+
+    .body {
+      max-width: 780px;
+      font-size: 22px;
+      line-height: 1.9;
+    }
+
+    .body p {
+      margin: 0 0 22px;
+    }
+
+    .kv {
+      margin: 42px 0 10px;
+      font-size: 22px;
+    }
+
+    .kv strong {
+      font-weight: 700;
+    }
+
+    h3 {
+      margin: 42px 0 10px;
+      font-size: 22px;
+    }
+
+    ul {
+      margin: 0 0 26px 20px;
+      padding: 0;
+    }
+
+    li {
+      margin: 2px 0 5px;
+      font-size: 22px;
+    }
+
+    /* 작은 화면 대응 */
+    @media (max-width:640px) {
+      h1 {
+        font-size: 34px;
+      }
+
+      .body,
+      .kv,
+      li,
+      h3 {
+        font-size: 18px;
+      }
+    }
+
+       /* GIF 바둑판 스타일 */
+    .gif-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      justify-items: center;
+      margin-top: 50px;
+    }
+
+    .gif-container img {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <div class="wrap">
+      <h1>환경 교육 메타버스 <span style="font-weight:400; color:#888; font-size: .7em;"> 5명 - Client/PM</span></h1>
+      <div class="links">
+        <a href="https://play.google.com/store/apps/details?id=com.ehancreative.illynsammetaverse&pcampaignid=web_share"
+          aria-label="Android 링크">Android 링크</a>
+        <a href="https://appadvice.com/app/duwing-eb-93-80-ec-9c-99/6443939947" aria-label="iOS 링크">iOS 링크</a>
+      </div>
+      <section class="body" style="font-size: 20px;">
+        <p>
+          초등학교 대상 환경 교육용 메타버스<br>
+          유저들과 같은 공간에서 컨텐츠를 진행하며 환경 보호에 대한 교육을 진행<br>
+          유저들끼리 WebRTC를 이용하여 화상채팅을 진행<br>
+        </p>
+        <h3>개발 기간</h3>
+        <ul>
+          <li>2022.05 - 2022.08 (4개월)</li>
+        </ul>
+        <h4>개발 도구</h4>
+        <ul>
+          <li>Unity, C#</li>
+          <li>Google Login API</li>
+          <li>iOS Login API</li>
+        </ul>
+        <h3>개발 내용</h3>
+        <ul>
+          <li>캐릭터 이동 및 동기화 구현</li>
+          <li>Google Login, iOS Login 개발</li>
+          <li>유저 화상 통화 기능 개발</li>
+          <li>그린 메타버스 컨텐츠 및 UI 개발 (22.05~22.06)</li>
+          <li>환경 교육용 메타버스 컨텐츠 및 UI 개발 (22.07~22.08)</li>
+        </ul>
+        <!-- GIF 바둑판 -->
+        <div class="gif-container">
+          <img src="capture/illyoxgame.gif" alt="일리ox게임">
+          <img src="capture/screenshot.gif" alt="스크린샷">
+          <img src="capture/map.gif" alt="맵">
+          <img src="capture/mission.gif" alt="미션">
+          <img src="capture/list.gif" alt="도감">
+          <img src="capture/cardgmae.gif" alt="카드게임">
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>김정훈 포트폴리오</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Noto Sans KR', Arial, sans-serif;
+            background: #fff;
+            height: 100%;
+        }
+
+        .container {
+            display: flex;
+            min-height: 100%;
+            height: 100%;
+        }
+
+        .sidebar {
+            background: #111;
+            color: #fff;
+            width: 300px;
+            padding: 32px 24px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+        }
+
+        .sidebar h1 {
+            font-size: 1.7em;
+            margin: 0 0 10px 0;
+            font-weight: 500;
+        }
+
+        .sidebar .birth {
+            font-size: 1.2em;
+            margin-bottom: 24px;
+            font-weight: 400;
+        }
+
+        .sidebar nav {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .sidebar nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.15em;
+            font-weight: 400;
+            transition: color 0.2s;
+            cursor: pointer;
+        }
+
+        .sidebar nav a:hover {
+            color: #00bfff;
+        }
+
+        .main {
+            flex: 1;
+            padding: 40px 48px 140px 48px;
+            box-sizing: border-box;
+            background: #fff;
+            margin-left: 300px;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            background: #e0e0e0;
+            border-radius: 50%;
+            background-image: url('https://cdn-icons-png.flaticon.com/512/149/149071.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .profile-info h2 {
+            margin: 0;
+            font-size: 2em;
+            font-weight: 600;
+        }
+
+        .profile-info .job {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        .profile-info .age {
+            font-size: 1em;
+            color: #888;
+        }
+
+        .contact {
+            margin: 18px 0 32px 0;
+            font-size: 1em;
+            color: #444;
+        }
+
+        .section {
+            margin-bottom: 32px;
+            background: #fff;
+        }
+
+        .section-title {
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-bottom: 12px;
+            border-bottom: 2px solid #222;
+            padding-bottom: 4px;
+        }
+
+        .edu-list,
+        .career-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .edu-list li,
+        .career-list li {
+            margin-bottom: 12px;
+        }
+
+        .career-list .company {
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .career-list .role {
+            font-size: 1em;
+            color: #555;
+            margin-bottom: 4px;
+        }
+
+        .career-list ul {
+            margin: 0 0 0 16px;
+            padding: 0;
+            font-size: 0.98em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h1>김정훈</h1>
+            <div class="birth">kjh96682@naver.com</div>
+            <nav>
+                <a href="#" onclick="loadProfile(event)">이력서</a>
+                <a href="#" onclick="loadSkill(event)">보유 기술</a>
+                <a href="#" onclick="loadKisti(event)">치매 예방 및 관리 프로그램</a>
+                <a href="#" onclick="loadIlly(event)">환경 교육 메타버스</a>
+                <a href="#" onclick="loadHolo(event)">공정 시뮬레이션</a>
+                <a href="#" onclick="loadGym(event)">VR 체육 게임</a>
+                <!-- <a href="#" onclick="loadMath(event)">EBS 수학교육 AR</a> -->
+                <a href="#" onclick="loadDenti(event)">VR 치과 시뮬레이션</a>
+                <a href="#" onclick="loadOTT(event)">OTT 어린이 교육 게임</a>
+            </nav>
+        </aside>
+        <main class="main">
+            <div id="content-area">
+                <!-- 이력서, 경력 등 기존 내용은 삭제해도 됩니다. -->
+            </div>
+        </main>
+        <script>
+            function loadProfile(e) {
+                e.preventDefault();
+                fetch('Profile.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById('content-area').innerHTML = html;
+                    });
+            }
+            function loadSkill(e) {
+                e.preventDefault();
+                fetch('Skill.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById('content-area').innerHTML = html;
+                    });
+            }
+            function loadKisti(e) {
+                e.preventDefault();
+                fetch('Kisti.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById('content-area').innerHTML = html;
+                    });
+            }
+            function loadIlly(e) {
+                e.preventDefault();
+                fetch('IllyNSam.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById('content-area').innerHTML = html;
+                    });
+            }
+            function loadHolo(e) {
+                e.preventDefault();
+                fetch('Hololens.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById('content-area').innerHTML = html;
+                    });
+            }
+            function loadGym(e) {
+                e.preventDefault();
+                fetch('GymVR.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById('content-area').innerHTML = html;
+                    });
+            }
+            function loadMath(e) {
+                e.preventDefault();
+                fetch('Math.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById('content-area').innerHTML = html;
+                    });
+            }
+            function loadDenti(e) {
+                e.preventDefault();
+                fetch('DentistryVR.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById('content-area').innerHTML = html;
+                    });
+            }
+            function loadOTT(e) {
+                e.preventDefault();
+                fetch('GameOTT.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById('content-area').innerHTML = html;
+                    });
+            }
+        </script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VR 체육 게임</title>
+  <style>
+    :root {
+      --text: #111;
+      --sub: #6a6a6a;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: var(--text);
+      font-family: Segoe UI, Apple SD Gothic Neo, Malgun Gothic, system-ui, -apple-system, Arial, sans-serif;
+    }
+
+    .page {
+      max-width: 1000px;
+      margin: 56px auto 120px;
+    }
+
+    .wrap {
+      padding: 0 32px;
+    }
+
+    h1 {
+      font-size: 44px;
+      line-height: 1.15;
+      margin: 0 0 20px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .links {
+      margin: 0 0 36px;
+      font-size: 18px;
+      color: #1a73e8;
+    }
+
+    .links a {
+      color: #1a73e8;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      margin-right: 12px;
+    }
+
+    .body {
+      max-width: 780px;
+      font-size: 22px;
+      line-height: 1.9;
+    }
+
+    .body p {
+      margin: 0 0 22px;
+    }
+
+    .kv {
+      margin: 42px 0 10px;
+      font-size: 22px;
+    }
+
+    .kv strong {
+      font-weight: 700;
+    }
+
+    h3 {
+      margin: 42px 0 10px;
+      font-size: 22px;
+    }
+
+    ul {
+      margin: 0 0 26px 20px;
+      padding: 0;
+    }
+
+    li {
+      margin: 2px 0 5px;
+      font-size: 22px;
+    }
+
+    /* 작은 화면 대응 */
+    @media (max-width:640px) {
+      h1 {
+        font-size: 34px;
+      }
+
+      .body,
+      .kv,
+      li,
+      h3 {
+        font-size: 18px;
+      }
+    }
+
+      /* GIF 바둑판 스타일 */
+    .gif-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      justify-items: center;
+      margin-top: 50px;
+    }
+
+    .gif-container img {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <div class="wrap">
+      <h1>VR 체육 게임<span style="font-weight:400; color:#888; font-size: .7em;"> 4명 - Client/PE</span></h1>
+      <section class="body" style="font-size: 20px;">
+        <p>
+          VR과 어트렉션을 이용하여 체육활동을 할 수 있게 만든 게임<br>
+        </p>
+        <h3>개발 기간</h3>
+        <ul>
+          <li>2021.05 - 2021.11 (7개월)</li>
+        </ul>
+        <h4>개발 도구</h4>
+        <ul>
+          <li>Unreal, BluePrint</li>
+          <li>Vive Pro</li>
+        </ul>
+        <h3>개발 내용</h3>
+        <ul>
+          <li>리듬게임 개발</li>
+          <ul>
+            <li>CSV 파일 파싱을 통해 리듬게임 노드 출력 기능 개발</li>
+          </ul>
+          <li>3D 미로 게임 개발</li>
+          <ul>
+            <li>BinaryTree 알고리즘을 이용하여 랜덤 미로 생성 기능 개발</li>
+          </ul>
+          <li>리듬게임, 미로게임 전체 컨텐츠 및 UI 개발</li>
+        </ul>
+        </ul>
+
+        <!-- GIF 바둑판 -->
+        <div class="gif-container">
+          <img src="capture/maze.gif" alt="미로게임 애니메이션">
+          <img src="capture/dance.gif" alt="리듬게임 애니메이션">
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>

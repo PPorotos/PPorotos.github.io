@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>치매 예방 및 관리 프로그램</title>
+  <style>
+    :root {
+      --text: #111;
+      --sub: #6a6a6a;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: var(--text);
+      font-family: Segoe UI, Apple SD Gothic Neo, Malgun Gothic, system-ui, -apple-system, Arial, sans-serif;
+    }
+
+    .page {
+      max-width: 1000px;
+      margin: 56px auto 120px;
+    }
+
+    .wrap {
+      padding: 0 0px;
+    }
+
+    h1 {
+      font-size: 44px;
+      line-height: 1.15;
+      margin: 0 0 20px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .links {
+      margin: 0 0 36px;
+      font-size: 18px;
+      color: #1a73e8;
+    }
+
+    .links a {
+      color: #1a73e8;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      margin-right: 12px;
+    }
+
+    .body {
+      max-width: 780px;
+      font-size: 22px;
+      line-height: 1.9;
+    }
+
+    .body p {
+      margin: 0 0 22px;
+    }
+
+    .kv {
+      margin: 42px 0 10px;
+      font-size: 22px;
+    }
+
+    .kv strong {
+      font-weight: 700;
+    }
+
+    h3 {
+      margin: 42px 0 10px;
+      font-size: 22px;
+    }
+
+    ul {
+      margin: 0 0 26px 20px;
+      padding: 0;
+    }
+
+    li {
+      margin: 2px 0 5px;
+      font-size: 22px;
+    }
+
+    /* 작은 화면 대응 */
+    @media (max-width:640px) {
+      h1 {
+        font-size: 34px;
+      }
+
+      .body,
+      .kv,
+      li,
+      h3 {
+        font-size: 18px;
+      }
+    }
+
+      /* GIF 바둑판 스타일 */
+    .gif-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      justify-items: center;
+      margin-top: 50px;
+    }
+
+    .gif-container img {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <div class="wrap">
+      <h1>치매 예방 및 관리 프로그램<span style="font-weight:400; color:#888; font-size: .7em;"> 6명 - Client/PM</span></h1>
+    </div>
+    <section class="body" style="font-size: 20px;">
+      <p>
+        카이스트 산학협력 사업으로 개발한 프로젝트<br>
+        환자의 VR 게임데이터를 통해 치매 기능 측정 데이터를 받아오고 관리<br>
+        받아온 데이터를 런처를 통해 교수, 보호자가 확인 할 수 있는 기능 제공<br>
+        화상채팅 기능을 통해 원격으로 VR게임 치매 예방 교육을 진행하는 기능 제공<br>
+      </p>
+      <h3>개발 기간</h3>
+      <ul>
+        <li>2023.05 - 2023.11 (7개월)</li>
+      </ul>
+      <h4>개발 도구</h4>
+      <ul>
+        <li>Unity, C#</li>
+        <li>Photon</li>
+        <li>Agora API</li>
+      </ul>
+      <h3>개발 내용</h3>
+      <ul>
+        <li>Agora API를 이용하여 화상채팅 기능 개발</li>
+        <li>Photon을 이용한 VR 게임 사용자 게임 제어</li>
+        <li>사용자 정보 캡처 후 PDF파일로 저장 기능 개발</li>
+        <li>전제적인 런처 기능 및 UI 개발</li>
+      </ul>
+      <div class="gif-container">
+          <img src="capture/agora_1.PNG" alt="화상채팅 화면">
+          <img src="capture/agora_2.PNG" alt="화상채팅 화면">
+      </div>
+    </section>
+    </div>
+  </main>
+</body>
+
+</html>
