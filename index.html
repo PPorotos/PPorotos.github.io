@@ -217,7 +217,7 @@
             }
             function loadHolo(e) {
                 e.preventDefault();
-                fetch('Hololens.html')
+                fetch('holo.html')
                     .then(response => response.text())
                     .then(html => {
                         document.getElementById('content-area').innerHTML = html;
